@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <div id="first-btns">
+      <button id="complimentButton">Get a compliment</button>
+      <button class="topbtn" id="fortuneButton">Get a fortune</button>
+    </div>
+    <figure>
+      <p>
+        <img
+          id="color-house"
+          src="data:image/png;base64,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"
+          alt="generic house image"
+        />
+        <figcaption>
+          Mouse down on the house to find out the beautiful color of your next
+          home!
+        </figcaption>
+        <span id="color-answer" class="default"></span>
+      </p>
+    </figure>
+
+    <div id="hacks">
+      <button id="life-hacks">Double click for some life hacks!</button>
+      <span id="hack-answer"></span>
+    </div>
+    <span id="try-things">
+      <button id="trt-btn">Things to Try</button>
+    </span>
+    <span id="try-answer"></span>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      document.getElementById("complimentButton").onclick = function () {
+        axios
+          .get("http://localhost:4000/api/compliment/")
+          .then(function (response) {
+            const data = response.data;
+            alert(data);
+          });
+      };
+
+      document.getElementById("fortuneButton").onclick = () => {
+        axios
+          .get("http://localhost:4000/api/fortune/")
+          .then((res) => {
+            alert(res.data);
+          })
+          .catch((error) => console.log(error));
+      };
+
+      document.getElementById("color-house").onmousedown = () => {
+        document.getElementById("color-answer").innerHTML = "";
+        axios
+          .get("http://localhost:4000/api/house-color/")
+          .then((res) => {
+            document.getElementById(
+              "color-answer"
+            ).innerHTML += `<h2>Your next home will be ${res.data}. I'd call that a win!!</h2>`;
+            document.getElementById("color-answer").className = `${res.data}`;
+            // console.log(document.getElementById("color-answer").className);
+          })
+          .catch((error) => console.log(error));
+      };
+
+      document.getElementById("life-hacks").ondblclick = () => {
+        document.getElementById("hack-answer").innerHTML = "";
+        axios
+          .get("http://localhost:4000/api/life-hacks/")
+          .then((res) => {
+            // console.log(res.data);
+            document.getElementById(
+              "hack-answer"
+            ).innerHTML += `<h2>Life Hack: ${res.data}</h2>`;
+          })
+          .catch((error) => console.log(error));
+      };
+      //////////////////////////////////////////////////////
+      document.getElementById("try-things").onclick = () => {
+        document.getElementById("try-answer").innerHTML = "";
+        axios
+          .get("http://localhost:4000/api/try-things/")
+          .then((res) => {
+            document.getElementById(
+              "try-answer"
+            ).innerHTML += `<h2>Try ${res.data}</h2>`;
+          })
+          .catch((error) => console.log(error));
+      };
+    </script>
+  </body>
+</html>
